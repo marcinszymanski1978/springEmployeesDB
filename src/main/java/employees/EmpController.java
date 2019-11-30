@@ -26,18 +26,21 @@ public class EmpController {
     }
 
     @RequestMapping(value="/save", method = RequestMethod.POST)
-    public ModelAndView save(@ModelAttribute("employees") Employees employees){
-        if(employees.getId() < 0) {
+    public ModelAndView save(@ModelAttribute("employees") Employees employee){
+        if(employee.getId() < 0) {
             System.out.println("New emp");
-            employees.setId(list.size()+1);
-            list.add(employees);
+            employee.setId(list.size()+1);
+            list.add(employee);
         } else {
-            Employees emp1 = getEmployeesById(employees.getId());
-           // emp1.setDesignation(employees.getDesignation());
-         //   emp1.setName(employees.getName());
-         //   emp1.setSalary(employees.getSalary());
+            //update
+            System.out.println("Update employee nr: "+employee.getId());
+
+            Employees empTemp = getEmployeesById(employee.getId());
+//            employee.setName(empTemp.getName());
+//            employee.setSalary(empTemp.getSalary());
+//            employee.setDesignation(empTemp.getDesignation());
         }
-        System.out.println(employees.getFirstName()+" "+employees.getSalary()+" "+employees.getLastName());
+        System.out.println(employee.getFirstName()+" "+employee.getSalary()+" "+employee.getLastName());
         return new ModelAndView("redirect:/viewemp");
     }
 

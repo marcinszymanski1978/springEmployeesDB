@@ -1,5 +1,8 @@
 package hibernate;
 
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
 import java.util.List;
 
 import org.hibernate.Session;
@@ -12,13 +15,13 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-public class EmployeeDao implements HibernateEntity{
+public class CarsDao {
 
-    public void saveEmployee(Employees employee) {
+    public void saveCars(Cars cars) {
         Transaction transaction = null;
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.save(employee);
+            session.save(cars);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {
@@ -28,17 +31,17 @@ public class EmployeeDao implements HibernateEntity{
         }
     }
 
-    public List<Employees> getEmployees() {
+    public List<Cars> getCars() {
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
-            return session.createQuery("from Employees", Employees.class).list();
+            return session.createQuery("from Cars", Cars.class).list();
         }
     }
 
-    public void updateEmployees(Employees employee) {
+    public void updateCars(Cars cars) {
         Transaction transaction = null;
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.update(employee);
+            session.update(cars);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {
@@ -48,13 +51,14 @@ public class EmployeeDao implements HibernateEntity{
         }
     }
 
-    public void deleteEmployees(int id) {
-        Employees employee = getEmployees().get(id);
+    public void deleteCars(int id) {
+
+        Cars carsToDelete = getCars().get(id);
 
         Transaction transaction = null;
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.delete(employee);
+            session.delete(carsToDelete);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {

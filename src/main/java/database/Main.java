@@ -38,7 +38,7 @@ public class Main {
 
 
         TransactionsSQL.transactions(connection, crudStatementSQL.insertSQLbyJDBC(insertQuery));
-     //   TransactionsSQL.transactions(connection, crudStatementSQL.updateSQLbyJDBC(updateQuery));
+//        TransactionsSQL.transactions(connection, crudStatementSQL.updateSQLbyJDBC(updateQuery));
     //    TransactionsSQL.transactions(connection,  crudStatementSQL.deleteSQLbyID(8));
 
 

@@ -5,12 +5,12 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.util.*;
 
 @Entity
 @Table(name = "Employees")
 @ToString
-public class Employees {
+public class Employees implements HibernateEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -50,10 +50,19 @@ public class Employees {
     @Getter @Setter
     private int benefit;
 
+    @OneToMany(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
+    @Getter @Setter
+    @ToString.Exclude
+    private Set<Cars> cars;
 
-    public Employees(){
+    @OneToMany(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
+    @Getter @Setter
+    @ToString.Exclude
+    private Set<Phones> phones;
 
-    }
+
+
+    public Employees(){}
 
     public Employees(String lastName, String firstName, String address, String city, int salary, int age, Date startJobDate, int benefit) {
         this.lastName = lastName;
@@ -65,4 +74,6 @@ public class Employees {
         this.startJobDate = startJobDate;
         this.benefit = benefit;
     }
+
+
 }

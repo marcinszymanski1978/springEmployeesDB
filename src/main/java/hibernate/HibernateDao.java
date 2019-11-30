@@ -1,24 +1,49 @@
 package hibernate;
 
-import java.util.List;
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import java.util.Date;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
-public class EmployeeDao implements HibernateEntity{
+import java.util.List;
 
-    public void saveEmployee(Employees employee) {
+public class HibernateDao {
+
+    public void saveHibernateEntity(HibernateEntity hibernateEntity) {
         Transaction transaction = null;
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.save(employee);
+            session.save(hibernateEntity);
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+    }
+
+
+
+    public void updateHibernateEntity(HibernateEntity hibernateEntity) {
+        Transaction transaction = null;
+        try (Session session = HibernateConfig.getSessionFactory().openSession()) {
+            transaction = session.beginTransaction();
+            session.update(hibernateEntity);
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteHibernateEntity(HibernateEntity hibernateEntity) {
+
+
+        Transaction transaction = null;
+        try (Session session = HibernateConfig.getSessionFactory().openSession()) {
+            transaction = session.beginTransaction();
+            session.delete(hibernateEntity);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {
@@ -34,33 +59,11 @@ public class EmployeeDao implements HibernateEntity{
         }
     }
 
-    public void updateEmployees(Employees employee) {
-        Transaction transaction = null;
+    public List<Phones> getPhones() {
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
-            transaction = session.beginTransaction();
-            session.update(employee);
-            transaction.commit();
-        } catch (Exception e) {
-            if (transaction != null) {
-                transaction.rollback();
-            }
-            e.printStackTrace();
+            return session.createQuery("from Phones", Phones.class).list();
         }
     }
 
-    public void deleteEmployees(int id) {
-        Employees employee = getEmployees().get(id);
 
-        Transaction transaction = null;
-        try (Session session = HibernateConfig.getSessionFactory().openSession()) {
-            transaction = session.beginTransaction();
-            session.delete(employee);
-            transaction.commit();
-        } catch (Exception e) {
-            if (transaction != null) {
-                transaction.rollback();
-            }
-            e.printStackTrace();
-        }
-    }
 }

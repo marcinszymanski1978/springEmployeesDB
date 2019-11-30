@@ -1,14 +1,16 @@
 package hibernate;
 
+
 import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Phones")
+@Table(name = "Cars")
 @ToString
 @RequiredArgsConstructor
-public class Phones implements HibernateEntity{
+
+public class Cars implements HibernateEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,6 +18,7 @@ public class Phones implements HibernateEntity{
     @Getter
     @Setter
     private int id;
+
 
     @Column(name = "name")
     @Getter
@@ -29,17 +32,16 @@ public class Phones implements HibernateEntity{
     @NonNull
     private String model;
 
-
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "EMPLOYEE_ID", nullable = false, referencedColumnName = "ID")
     @Getter @Setter
-    @NonNull
     public Employees employees;
 
-    public Phones() {
+
+    public Cars() {
 
     }
 
 
-}
 
+}

@@ -2,37 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ca0b2d-2c16-4f88-a040-516fafe7e385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/CRUDStatementSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/SQLConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/TransactionsSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/EmployeeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/Employees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/HibernateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/PhoneDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/Phones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/SendEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/Cars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/CarsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/HibernateDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/HibernateEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/PrinterDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/employees/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employees/EmpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/empform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/empform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/viewemp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/viewemp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/EmployeeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/PhoneDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/PhoneDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/Phones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/Phones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/employees/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/employees/EmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/EmployeeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/EmployeeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Employees.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/Employees.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/HibernateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/PhoneDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/PhoneDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Phones.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/Phones.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-11-12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/empform_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/conf/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-11-22" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewemp_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,32 +64,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="Microsoft SQL Server - @localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="CONNECTIS: database" type="ccb7ac2a:MsImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="CONNECTIS: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="CONNECTIS: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="CONNECTIS: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Phones: table" type="63ab2ba1:MsImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -90,12 +71,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XSLT Stylesheet" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="marcinszymanski1978" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -116,19 +103,25 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql&#10;sqlserver" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring_restaurant_todo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -142,22 +135,10 @@
       <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp\WEB-INF" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.MainHibernate">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="database.Main" />
-      <module name="mywebapp" />
+      <module name="springEmployeesDB" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="database.*" />
@@ -170,7 +151,7 @@
     </configuration>
     <configuration name="MainHibernate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hibernate.MainHibernate" />
-      <module name="mywebapp" />
+      <module name="springEmployeesDB" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hibernate.*" />
@@ -183,7 +164,7 @@
     </configuration>
     <configuration name="MainScope" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="scope.MainScope" />
-      <module name="mywebapp" />
+      <module name="springEmployeesDB" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="scope.*" />
@@ -230,9 +211,7 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
-      <method v="2">
-        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="mywebapp [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -257,9 +236,32 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
-      <method v="2">
-        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
-      </method>
+      <method v="2" />
+    </configuration>
+    <configuration name="mywebapp [tomcat7:shutdown]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:shutdown" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
@@ -267,15 +269,32 @@
       <item itemvalue="Application.MainScope" />
       <item itemvalue="Application.SendEmail" />
       <item itemvalue="Maven.mywebapp [tomcat7:run]" />
+      <item itemvalue="Maven.mywebapp [tomcat7:shutdown]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainHibernate" />
-        <item itemvalue="Application.SendEmail" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Maven.mywebapp [tomcat7:shutdown]" />
         <item itemvalue="Application.MainScope" />
+        <item itemvalue="Application.SendEmail" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringGeneralSettings">
+    <option name="allowAutoConfigurationMode" value="true" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -293,6 +312,24 @@
       <workItem from="1574276191621" duration="5788000" />
       <workItem from="1574358517012" duration="6516000" />
       <workItem from="1574424383172" duration="4269000" />
+      <workItem from="1574945690146" duration="2836000" />
+      <workItem from="1574949454671" duration="836000" />
+      <workItem from="1574950326637" duration="7657000" />
+      <workItem from="1574998369034" duration="543000" />
+      <workItem from="1574999156053" duration="697000" />
+      <workItem from="1575000255328" duration="46000" />
+      <workItem from="1575000478714" duration="474000" />
+      <workItem from="1575001035865" duration="843000" />
+      <workItem from="1575002005224" duration="21000" />
+      <workItem from="1575002068900" duration="924000" />
+      <workItem from="1575012038704" duration="139000" />
+      <workItem from="1575012271864" duration="47000" />
+      <workItem from="1575012533022" duration="1917000" />
+      <workItem from="1575015229533" duration="255000" />
+      <workItem from="1575015581947" duration="824000" />
+      <workItem from="1575016432237" duration="14126000" />
+      <workItem from="1575101655431" duration="651000" />
+      <workItem from="1575102678823" duration="1156000" />
     </task>
     <servers />
   </component>
@@ -314,5 +351,112 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="https:/github.com/marcinszymanski1978/springEmployeesDB.git" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="583" y="198" key="#Assign_Data_Sources" timestamp="1575020898454">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="583" y="198" key="#Assign_Data_Sources/62.0.1858.1080@62.0.1858.1080" timestamp="1575020898454" />
+    <state x="708" y="198" key="#Main" timestamp="1574947781024">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="708" y="198" key="#Main/62.0.1858.1080@62.0.1858.1080" timestamp="1574947781024" />
+    <state x="708" y="198" key="#MainHibernate" timestamp="1574949191181">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="708" y="198" key="#MainHibernate/62.0.1858.1080@62.0.1858.1080" timestamp="1574949191181" />
+    <state x="708" y="198" key="#MainScope" timestamp="1574947616887">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="708" y="198" key="#MainScope/62.0.1858.1080@62.0.1858.1080" timestamp="1574947616887" />
+    <state x="583" y="198" key="#Notifications" timestamp="1575104028194">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="583" y="198" key="#Notifications/62.0.1858.1080@62.0.1858.1080" timestamp="1575104028194" />
+    <state x="583" y="198" key="#Plugins" timestamp="1575015211892">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="583" y="198" key="#Plugins/62.0.1858.1080@62.0.1858.1080" timestamp="1575015211892" />
+    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575015481163">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575015481163" />
+    <state x="842" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1574947306852">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="842" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1574947306852" />
+    <state x="580" y="134" key="CommitChangelistDialog2" timestamp="1575104011410">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="580" y="134" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1575104011410" />
+    <state x="771" y="294" key="FileChooserDialogImpl" timestamp="1575102778351">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="771" y="294" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1575102778351" />
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1575101628669">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1575101628669" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1575101628669">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1575101628669" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1575101628669">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1575101628669" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1575101628669">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1575101628669" />
+    <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1575000999306">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1575000999306" />
+    <state width="1815" height="364" key="GridCell.Tab.1.center" timestamp="1575000999306">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1575000999306" />
+    <state width="1815" height="364" key="GridCell.Tab.1.left" timestamp="1575000999306">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1575000999306" />
+    <state width="1815" height="364" key="GridCell.Tab.1.right" timestamp="1575000999306">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1575000999306" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1575027653572">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/62.0.1858.1080@62.0.1858.1080" timestamp="1575027653572" />
+    <state x="521" y="194" key="Maven.ArtifactSearchDialog" timestamp="1574952819022">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="194" key="Maven.ArtifactSearchDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1574952819022" />
+    <state x="492" y="182" key="SettingsEditor" timestamp="1575015198531">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="492" y="182" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1575015198531" />
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1575102678357">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1575102678357" />
+    <state x="647" y="250" key="run.anything.popup" timestamp="1575027346488">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="647" y="250" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1575027346488" />
+    <state x="647" y="193" width="672" height="676" key="search.everywhere.popup" timestamp="1575015204085">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="647" y="193" width="672" height="676" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1575015204085" />
+    <state x="671" y="222" key="spring file set editor" timestamp="1574949539083">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="671" y="222" key="spring file set editor/62.0.1858.1080@62.0.1858.1080" timestamp="1574949539083" />
   </component>
 </project>

@@ -5,7 +5,7 @@ import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class PhoneDao {
+public class PhoneDao implements HibernateEntity{
 
     public void savePhones(Phones phones) {
         Transaction transaction = null;
@@ -32,6 +32,23 @@ public class PhoneDao {
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
             session.update(phones);
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+    }
+
+    public void deletePhones(int id) {
+
+        Phones phoneToDelete = getPhones().get(id);
+
+        Transaction transaction = null;
+        try (Session session = HibernateConfig.getSessionFactory().openSession()) {
+            transaction = session.beginTransaction();
+            session.delete(phoneToDelete);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {
