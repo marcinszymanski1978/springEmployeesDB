@@ -7,32 +7,40 @@ import java.util.Set;
 
 public class MainHibernate {
     public static void main(String[] args) {
-        EmployeeDao employeeDao = new EmployeeDao();
+        HibernateDao employeeDao = new HibernateDao();
         Employees employee = new Employees("Test", "Test", "Test", "Test", 1000, 18 , new Date(), 1);
-        employeeDao.saveEmployee(employee);
+        employeeDao.saveHibernateEntity(employee);
         List<Employees> employeesList = employeeDao.getEmployees();
 
         Employees employeeToUpdate = employeesList.get(0);
         employeeToUpdate.setSalary(1111);
-        employeeDao.updateEmployees(employeeToUpdate);
+        employeeDao.updateHibernateEntity(employeeToUpdate);
 
         employeesList.forEach(System.out::println);
 
-        PhoneDao phoneDao = new PhoneDao();
+        HibernateDao phoneDao = new HibernateDao();
         Phones phones = new Phones("Sony", "Xperia 10", employee);
-        phoneDao.savePhones(phones);
+        phoneDao.saveHibernateEntity(phones);
         Set<Phones> phonesList = new HashSet<>();
         phonesList.add(phones);
         employee.setPhones(phonesList);
-        employeeDao.updateEmployees(employee);
+        employeeDao.updateHibernateEntity(employee);
 
-        CarsDao carsDao = new CarsDao();
-        Cars cars = new Cars();
-        phoneDao.savePhones(phones);
-        Set<Phones> phonesList = new HashSet<>();
-        phonesList.add(phones);
-        employee.setPhones(phonesList);
-        employeeDao.updateEmployees(employee);
+        HibernateDao carsDao = new HibernateDao();
+        Cars cars = new Cars("Audi","Q7",employee );
+        carsDao.saveHibernateEntity(cars);
+        Set<Cars> carsList = new HashSet<>();
+        carsList.add(cars);
+        employee.setCars(carsList);
+        employeeDao.updateHibernateEntity(employee);
+
+        HibernateDao printerDao = new HibernateDao();
+        Printer printer = new Printer("Xerox",true,"Connectis",employee);
+        printerDao.saveHibernateEntity(printer);
+        Set<Printer> printerList = new HashSet<>();
+        printerList.add(printer);
+        employee.setPrinters(printerList);
+        employeeDao.updateHibernateEntity(employee);
 
 
 

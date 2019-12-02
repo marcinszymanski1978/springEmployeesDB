@@ -5,7 +5,7 @@ import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class HibernateDao {
+public class HibernateDao implements HibernateEntity{
 
     public void saveHibernateEntity(HibernateEntity hibernateEntity) {
         Transaction transaction = null;

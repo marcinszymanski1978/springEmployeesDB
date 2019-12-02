@@ -13,6 +13,7 @@ public class Printer implements HibernateEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
+    @Setter @Getter
     private int id;
 
     @Column(name = "model")
@@ -31,28 +32,16 @@ public class Printer implements HibernateEntity{
     @NonNull
     private String localization;
 
-    @Column(name = "userName")
-    @Getter @Setter
-    @NonNull
-    private String userName;
 
-    @Column(name = "userID")
+
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "EMPLOYEE_ID", nullable = false, referencedColumnName = "ID")
     @Getter @Setter
     @NonNull
-    private int userId;
+    public Employees employees;
 
     public Printer (){}
 
 
-//    @OneToMany(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
-//    @Getter @Setter
-//    @ToString.Exclude
-//    private Set<Cars> cars;
-//
-//    @OneToMany(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
-//    @Getter @Setter
-//    @ToString.Exclude
-//    private Set<Phones> phones;
-//
 
 }

@@ -9,7 +9,6 @@ import javax.persistence.*;
 @Table(name = "Cars")
 @ToString
 @RequiredArgsConstructor
-
 public class Cars implements HibernateEntity{
 
     @Id
@@ -35,6 +34,7 @@ public class Cars implements HibernateEntity{
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "EMPLOYEE_ID", nullable = false, referencedColumnName = "ID")
     @Getter @Setter
+    @NonNull
     public Employees employees;
 
 

@@ -60,6 +60,11 @@ public class Employees implements HibernateEntity{
     @ToString.Exclude
     private Set<Phones> phones;
 
+    @OneToMany(mappedBy = "employees", orphanRemoval = true, fetch = FetchType.EAGER)
+    @Getter @Setter
+    @ToString.Exclude
+    private Set<Printer> printers;
+
 
 
     public Employees(){}

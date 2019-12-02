@@ -1,6 +1,6 @@
 package employees;
 
-import hibernate.EmployeeDao;
+import hibernate.HibernateDao;
 import hibernate.Employees;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -16,7 +16,7 @@ public class EmpController {
     private List<Employees> list;
 
     public EmpController() {
-        EmployeeDao employeeDao = new EmployeeDao();
+        HibernateDao employeeDao = new HibernateDao();
         list = employeeDao.getEmployees();
     }
 
